@@ -2,7 +2,7 @@
 
 ## Schema
 
-Trello board: https://nuxtjs.org/docs/2.x/directory-structure/layouts.
+Trello board: https://trello.com/b/sqtkgdby/work.
 
 ## Build Setup
 
