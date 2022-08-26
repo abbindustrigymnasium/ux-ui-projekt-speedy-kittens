@@ -1,4 +1,8 @@
-# Theodor-Blogg
+# Fabula
+
+## Schema
+
+Trello board: https://nuxtjs.org/docs/2.x/directory-structure/layouts.
 
 ## Build Setup
 
