@@ -10,13 +10,16 @@
             <div id="orange-thing"></div> -->
           </div>
           <div class="w-full md:w-1/2">
-             <nuxt-content :document="about" style="margin:10%;" class="font-body"></nuxt-content>
+             <!-- <nuxt-content :document="about" style="margin:10%;" class="font-body"></nuxt-content> -->
           </div>
         </div>
-        <h1>Latest posts</h1>
+        <h1>Recomended Books</h1>
         <div class="flex flex-wrap" style="justify-content: center; margin-bottom:200px">
-          <div @click="goToDish(page.id)" class="w-56 m-6" style="cursor: pointer;" v-for="page in pages" :key="page.id">
-            <PostItemComponent :item="page"></PostItemComponent>
+          <div class="w-56 m-6" style="cursor: pointer; background-color: rgb(150, 150, 150);" v-for="book in books" :key="book.id">
+            
+              <p>{{book.title}}</p>
+              <p>{{book.img}}</p>
+              <img :src="book.img" alt="">
           </div>
         </div>
       </div>
@@ -35,8 +38,11 @@ export default {
       // let about = await $content('index/short-about').fetch()
       // let pages = await $content('postsmd').sortBy('nr', 'desc').without(['body']).fetch()
       // sortBy('id', 'desc').limit() 
+      let db = require('../db_books.json');
+      let books = []
+      for(let i = 0; i<5; i++)books.push(db["books"][i])
       return {
-          // about, pages
+          books
       }
   }, 
   methods: {
@@ -70,4 +76,3 @@ export default {
 
 
 
-// https://www.behance.net/gallery/117672893/Cooking-blog?tracking_source=search_projects%7Cblog%20design
