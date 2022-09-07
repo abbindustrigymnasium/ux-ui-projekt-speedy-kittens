@@ -1,9 +1,9 @@
 <template>
-    <div class="z-50">
+    <div class="z-50" style="box-shadow: 0 0 24px 0 rgba(0,0,0,0.9);" >
         <div id="header" :class="$route.path=='/' " class="fixed bg-gray-700 w-full h-20 text-lg text-gray-400">
             <div class="flexcontent ml-8 py-4 ">
                 <nuxt-link to="/" class="linktext text-lg"> Home </nuxt-link>
-                <nuxt-link to="/posts/all" class="linktext text-lg"> Our Library </nuxt-link>
+                <nuxt-link to="/categories" class="linktext text-lg"> Our Library </nuxt-link>
                 <nuxt-link to="/about-me" class="linktext text-lg"> Meet the Staff</nuxt-link>
             </div>
         </div>
