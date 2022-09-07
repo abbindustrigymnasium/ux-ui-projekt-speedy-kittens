@@ -2,7 +2,7 @@
     "books": [
         {
             "id": 140,
-            "title": "Svenska timmar - litteraturen",
+            "title": "Svenska timmar - Litteraturen",
             "author": "Svante Skoglund",
             "img": "https://secure.syndetics.com/index.aspx?isbn=9140673375/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "genre": [
@@ -13,7 +13,7 @@
         },
         {
             "id": 141,
-            "title": "Read & Catch Up Update  [Kombinerat material] :  engelska A",
+            "title": "Read & Catch Up Update  [Kombinerat material] :  Engelska A",
             "author": "Någon, nånstans, nån gång.",
             "img": "https://secure.syndetics.com/index.aspx?isbn=9144009135/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "lang": "sweeng",
@@ -36,7 +36,7 @@
         },
         {
             "id": 143,
-            "title": "Wild swans :  three daughters of China",
+            "title": "Wild swans : Three Daughters of China",
             "author": "Jung Chang",
             "lang": "Engelska",
             "genre": [
@@ -47,7 +47,7 @@
         },
         {
             "id": 144,
-            "title": "Söka svar :  religionskunskap kurs A & B",
+            "title": "söka svar : Religionskunskap Kurs A & B",
             "author": "Malin Mattsson Flennegård, Leif Eriksson, Uriel Hedengren",
             "img": "https://secure.syndetics.com/index.aspx?isbn=9147092556/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "genre": [
@@ -69,7 +69,7 @@
         },
         {
             "id": 146,
-            "title": "Teman till historien",
+            "title": "Teman till Historien",
             "author": "Bengt Åke Häger  1,  Före 1789",
             "genre": [
                 "Akademisk"
@@ -89,7 +89,7 @@
         },
         {
             "id": 148,
-            "title": "Spela roll :  samhällskunskap 50 p",
+            "title": "Spela roll : Samhällskunskap 50 p",
             "author": "Fredrik Harstad, Sandra Heaver och Jens Öberg",
             "img": "https://secure.syndetics.com/index.aspx?isbn=9140673138/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "genre": [
@@ -110,7 +110,7 @@
         },
         {
             "id": 150,
-            "title": "Nya Alla tiders historia",
+            "title": "Nya Alla tiders Historia",
             "author": "Bergström, Löwgren, Almgren",
             "genre": [
                 "Akademisk"
@@ -132,7 +132,7 @@
         },
         {
             "id": 152,
-            "title": "Geography :  realms, regions, and concepts",
+            "title": "Geography :  Realms, Regions, and Concepts",
             "author": "H J. de Blij, Peter O. Muller",
             "img": "https://secure.syndetics.com/index.aspx?isbn=0471580899/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "lang": "Engelska",
@@ -220,7 +220,7 @@
         },
         {
             "id": 80,
-            "title": "Ōoku : the inner chambers. Vol. 4",
+            "title": "Ōoku : The Inner Chambers. Vol. 4",
             "author": "Fumi Yoshinaga",
             "img": "https://secure.syndetics.com/index.aspx?isbn=1421531690/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "lang": "Engelska",
@@ -235,7 +235,7 @@
         },
         {
             "id": 81,
-            "title": "Eden :  it's an endless world!",
+            "title": "Eden :  it's an Endless World!",
             "author": "Hiroki Endo",
             "img": "https://secure.syndetics.com/index.aspx?isbn=1593077025/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "lang": "Engelska",
@@ -247,7 +247,7 @@
         },
         {
             "id": 82,
-            "title": "Ōoku : the inner chambers. Vol. 2",
+            "title": "Ōoku : The Inner Chambers. Vol. 2",
             "author": "Fumi Yoshinaga",
             "img": "https://secure.syndetics.com/index.aspx?isbn=1421527480/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "lang": "Engelska",
@@ -262,7 +262,7 @@
         },
         {
             "id": 83,
-            "title": "Ōoku : the inner chambers. Vol. 1",
+            "title": "Ōoku : The Inner Chambers. Vol. 1",
             "author": "Fumi Yoshinaga",
             "img": "https://secure.syndetics.com/index.aspx?isbn=1421527472/MC.GIF&client=bibivastse&type=xw10&upc=&oclc=",
             "lang": "Engelska",
