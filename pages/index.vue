@@ -5,6 +5,9 @@
       <div class="quick-about">
         <div class="flex flex-wrap">
           <div class="w-full md:w-1/2">
+          <br>
+          <br>
+          <br>
             <!-- <img src="/pictures/Capture.png" width="80%" style="margin:17.5%"> -->
             <!-- <img src="https://assets-global.website-files.com/5d6ebfe6117b67440d16086f/61261fe24a57aa3847af57ce_fibra%20Copia%20de%20Ima%CC%81genes%20TechBlog.png" width="65%" style="margin:17.5%">
             <div id="orange-thing"></div> -->
