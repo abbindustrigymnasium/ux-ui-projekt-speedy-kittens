@@ -39,8 +39,27 @@ export default {
       // sortBy('id', 'desc').limit() 
       let db = require('../db_books.json');
       let books = []
+      let categorys = []
       for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])books.push(db["books"][i])
-      // console.log(books.length)
+      console.log(books.length)
+      for(let i = 0; i<books.length; i++){
+        for(let j = 0; j<books[i]["genre"].length; j++){
+          let seen = false
+          for(let gen = 0; gen<categorys.length; gen++){
+            if(books[i]["genre"][j] == categorys[gen][0]){
+              categorys[gen][1]++
+              seen = true
+              break;
+            }
+          }
+          if(!seen) categorys.push([books[i]["genre"][j], 1])
+        }
+      }
+      console.log("**************")
+      console.log(categorys.length)
+      for(let i = 0; i<categorys.length; i++){
+        console.log(categorys[i][0], categorys[i][1])
+      }
       return {
           books
       }
