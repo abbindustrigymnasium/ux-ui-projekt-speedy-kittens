@@ -2,11 +2,9 @@
     <div class="z-50">
         <div id="header" :class="$route.path=='/' ? 'absolute' : ''">
             <div class="flexcontent">
-                <img src="\pictures\cropped-Beskows_logo-1.png" alt="logo" width="70px" class="linktext">
                 <nuxt-link to="/" class="linktext" style="color:white;"> Home </nuxt-link>
-                <nuxt-link to="/posts/all" class="linktext" style="color:white;"> Posts </nuxt-link>
-                <nuxt-link to="/about-me" class="linktext" style="color:white;"> About me</nuxt-link>
-                
+                <nuxt-link to="/posts/all" class="linktext" style="color:white;"> Our Library </nuxt-link>
+                <nuxt-link to="/about-me" class="linktext" style="color:white;"> Meet the Staff</nuxt-link>
             </div>
         </div>
         <nuxt />
