@@ -8,10 +8,10 @@
             </div>
         </div>
         <nuxt />
-        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <footer class="text-center text-white bg-gray-700" style="box-shadow: 0 0 32px 0 rgba(0,10,20,0.6);">
             <div class="container mx-auto pt-9">
                 <div class="flex justify-center mb-9">
-                <a href="https://www.facebook.com/" class="mr-9 text-gray-800">
+                <a href="https://www.facebook.com/" class="mr-9 text-light-yellow-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -28,7 +28,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="https://twitter.com/" class="mr-9 text-gray-800">
+                <a href="https://twitter.com/" class="mr-9 text-light-yellow-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -45,7 +45,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="https://www.behance.net/gallery/117672893/Cooking-blog?tracking_source=search_projects%7Cblog%20design" class="mr-9 text-gray-800">
+                <a href="https://www.behance.net/gallery/117672893/Cooking-blog?tracking_source=search_projects%7Cblog%20design" class="mr-9 text-light-yellow-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -62,7 +62,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/" class="mr-9 text-gray-800">
+                <a href="https://www.instagram.com/" class="mr-9 text-light-yellow-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -79,7 +79,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="https://se.linkedin.com/" class="mr-9 text-gray-800">
+                <a href="https://se.linkedin.com/" class="mr-9 text-light-yellow-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
@@ -96,7 +96,7 @@
                     ></path>
                     </svg>
                 </a>
-                <a href="https://github.com/abbthebes/Theodor-Blogg" class="text-gray-800">
+                <a href="https://github.com/abbthebes/Theodor-Blogg" class="text-light-yellow-800">
                     <svg
                     aria-hidden="true"
                     focusable="false"
