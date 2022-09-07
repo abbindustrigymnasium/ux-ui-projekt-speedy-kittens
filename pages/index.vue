@@ -40,6 +40,7 @@ export default {
       // sortBy('id', 'desc').limit() 
       let db = require('../db_books.json');
       let books = []
+      console.log(db["books"].length)
       for(let i = 0; i<5; i++)books.push(db["books"][i])
       return {
           books
