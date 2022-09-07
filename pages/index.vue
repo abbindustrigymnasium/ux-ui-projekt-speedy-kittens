@@ -15,17 +15,13 @@
         </div>
         <h1>Recomended Books</h1>
         <div class="flex flex-wrap" style="justify-content: center; margin-bottom:200px">
-          <div class="w-56 m-6" style="cursor: pointer; background-color: rgb(150, 150, 150);" v-for="book in books" :key="book.id">
-            
+          <div @click="goToBook(book.ISBN)" class="w-56 m-6" style="cursor: pointer; background-color: rgb(150, 150, 150);" v-for="book in books" :key="book.id">
+
+              <p>{{book.ISBN}}</p>
               <p>{{book.title}}</p>
-              <p>{{book.img}}</p>
               <img :src="book.img" alt="">
           </div>
         </div>
-      </div>
-
-      <div>
-
       </div>
     </div>
   </div>
@@ -40,15 +36,15 @@ export default {
       // sortBy('id', 'desc').limit() 
       let db = require('../db_books.json');
       let books = []
-      console.log(db["books"].length)
-      for(let i = 0; i<5; i++)books.push(db["books"][i])
+      for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])books.push(db["books"][i])
+      // console.log(books.length)
       return {
           books
       }
   }, 
   methods: {
-    goToDish(id) {
-      //this.$router.push('/blogpost/'+id)
+    goToBook(id) {
+      this.$router.push('/book/'+id)
     }
   }
 }
