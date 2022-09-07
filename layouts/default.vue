@@ -1,6 +1,6 @@
 <template>
     <div class="z-50" >
-        <div id="header" :class="$route.path=='/' " class="fixed bg-gray-700 w-full h-20 text-lg text-gray-400" style="box-shadow: 0 0 32px 0 rgba(0,10,20,0.6);">
+        <div id="header" :class="$route.path=='/' " class="fixed bg-gray-800 w-full h-20 text-lg text-gray-400" style="box-shadow: 0 0 32px 0 rgba(0,10,20,0.6); top: 0;">
             <div class="flexcontent ml-8 py-4 ">
                 <nuxt-link to="/" class="linktext text-lg"> Home </nuxt-link>
                 <nuxt-link to="/categories" class="linktext text-lg"> Our Library </nuxt-link>
