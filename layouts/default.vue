@@ -1,10 +1,10 @@
 <template>
     <div class="z-50">
-        <div id="header" :class="$route.path=='/' ? 'absolute' : ''">
-            <div class="flexcontent">
-                <nuxt-link to="/" class="linktext" style="color:white;"> Home </nuxt-link>
-                <nuxt-link to="/posts/all" class="linktext" style="color:white;"> Our Library </nuxt-link>
-                <nuxt-link to="/about-me" class="linktext" style="color:white;"> Meet the Staff</nuxt-link>
+        <div id="header" :class="$route.path=='/' " class="fixed bg-gray-700 w-full h-20 text-lg text-gray-400">
+            <div class="flexcontent ml-8 py-4 ">
+                <nuxt-link to="/" class="linktext text-lg"> Home </nuxt-link>
+                <nuxt-link to="/posts/all" class="linktext text-lg"> Our Library </nuxt-link>
+                <nuxt-link to="/about-me" class="linktext text-lg"> Meet the Staff</nuxt-link>
             </div>
         </div>
         <nuxt />
@@ -125,10 +125,31 @@
 
 
 <style>
+
+     html {
+        font-family:
+            'Source Sans Pro',
+            -apple-system,
+            BlinkMacSystemFont,
+            'Segoe UI',
+            Roboto,
+            'Helvetica Neue',
+            Arial,
+            sans-serif;
+        font-size: 16px;
+        word-spacing: 1px;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+    }
     .linktext {
         margin:18px;
-        color: white;
-        font-size: 16px;
+        font-weight: 700;
+        /* color: rgb(156 163 175); */
+        text-shadow: 0 4px 8px rgba(0,0,20,0.8);
+        /* font-size: 16px; */
     }
     .flexcontent {
         height: 100%;
@@ -139,15 +160,28 @@
         
     }
     #header{
-        background-color: rgba(158, 158, 158, 0.600);
-        width: 320px;
-        height:70px;
-        /* position: absolute; */
-        border-radius: 0px 0px 70px 0px; 
+    
+        font-family:
+            'Source Sans Pro',
+            -apple-system,
+            BlinkMacSystemFont,
+            'Segoe UI',
+            Roboto,
+            'Helvetica Neue',
+            Arial,
+            sans-serif;
+        font-size: 16px;
+        word-spacing: 1px;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
     }
     #endimg {
         background-color: rgba(100, 100, 100, 1);
         /* background-image: url("/pictures/code_programming_symbols_140997_2560x1080.jpg"); */
         /* background-repeat: no-repeat; */
     }
+
 </style>
