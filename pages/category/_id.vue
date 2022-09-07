@@ -44,7 +44,12 @@ export default {
             books
         }
 
+    }, 
+  methods: {
+    goToBook(id) {
+      this.$router.push('/book/'+id)
     }
+  }
 }
 
 </script>
