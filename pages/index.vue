@@ -17,8 +17,8 @@
           </div>
         </div>
         <h1 class="text-gray-300">Recomended Books</h1>
-        <div class="flex flex-wrap bg-gray-700 py-12" style="justify-content: center; box-shadow: 0 0 48px 0 rgba(0,10,20,0.2);">
-          <div @click="goToBook(book.ISBN)" class="h-80 w-60 m-6 bg-gray-600 bg-cover text-gray-200" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.4);" v-for="book in books" :key="book.id" :style="{
+        <div class="flex flex-wrap bg-gray-700 py-12" style="justify-content: center; box-shadow: 0 0 48px 0 rgba(0,10,20,0.3);">
+          <div @click="goToBook(book.ISBN)" class="h-80 w-60 m-6 bg-gray-600 bg-cover text-gray-200 font-medium" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
           backgroundImage: `url(${book.img})`,
           textShadow: '0 0 6px rgba(0, 0, 30, 1)'
           }">

@@ -8,14 +8,21 @@
         <br>
     </div> -->
     <div>
-        <h1>Recomended Books</h1>
-        <div class="flex flex-wrap" style="justify-content: center; margin-bottom:200px">
-            <div @click="goToBook(book.ISBN)" class="w-56 m-6" style="cursor: pointer; background-color: rgb(150, 150, 150);" v-for="book in books" :key="book.id">
-
-                <p>{{book.ISBN}}</p>
+        <h1 class="text-gray-300">Recomended Books</h1>
+        <div class="flex flex-wrap bg-gray-700 py-12" style="justify-content: center; box-shadow: 0 0 48px 0 rgba(0,10,20,0.3);">
+          <div @click="goToBook(book.ISBN)" class="h-80 w-60 m-6 bg-gray-600 bg-cover text-gray-200 font-medium" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
+          backgroundImage: `url(${book.img})`,
+          textShadow: '0 0 6px rgba(0, 0, 30, 1)'
+          }">
+              <!-- <img :src="book.img" alt="" class="w-full h-60 bg-cover">   -->
+              <div class="w-full h-56"></div>
+              <div class="bg-gray-500 bg-opacity-100 h-24 p-4">
+                <!-- <p>{{book.ISBN}}</p> -->
                 <p>{{book.title}}</p>
-                <img :src="book.img" alt="">
-            </div>
+                <!-- <p>{{book.author}}</p> -->
+              </div>
+              
+          </div>
         </div>
     </div>
 </template>
