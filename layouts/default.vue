@@ -4,7 +4,7 @@
             <div class="flexcontent ml-8 py-4 ">
                 <nuxt-link to="/" class="linktext text-lg"> Home </nuxt-link>
                 <nuxt-link to="/categories" class="linktext text-lg"> Our Library </nuxt-link>
-                <nuxt-link to="/about-me" class="linktext text-lg"> Meet the Staff</nuxt-link>
+                <nuxt-link to="/staff" class="linktext text-lg"> Meet the Staff</nuxt-link>
             </div>
         </div>
         <nuxt />
