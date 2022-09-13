@@ -6,7 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "start-server": "json-server --watch db_books.json"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
