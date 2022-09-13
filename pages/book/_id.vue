@@ -1,24 +1,15 @@
 <template>
-    <!-- <div style="margin-left:10%; margin-right:10%;">
-        <nuxt-content :document="post"></nuxt-content>
-        <br>
-        <h5>Author: {{ post.author}}</h5>
-        <p>Created: {{ post.created}}</p>
-        <p>Updated: {{ post.updated}}</p>
-        <br>     class="flex justify-start" style="margin-left:5%;"
-    </div> -->
-    <div class="bg-gray-800 min-h-screen">
-      <h1 class="z-10 text-5xl justify-start text-white pt-24 w-6/12 justify-center " style="margin-left:20%;"> {{book.title}} skriven av {{book.author}} </h1>
-      <div class="bg-gray-700 flex justify-start box-shadow w-7/12" style="margin-left:20%;">
+    <div class="min-h-screen bg-cover" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);">
+        <h1 class="z-10 text-5xl justify-start text-white pt-24 w-6/12 justify-center " style="margin-left:20%;"> {{book.title}} skriven av {{book.author}} </h1>
+        <div class="bg-gray-700 flex justify-start box-shadow w-7/12 rounded-xl" style="margin-left:20%;">
+            <img :src="book.img" class="w-4/12 rounded-l-xl">
+            <div class="p-4">
+                <h1>{{book.title}}</h1>
+                <h3>{{book.author}}</h3>
 
-
-        <img :src="book.img" class="w-4/12">
-        <h1>det här är en bok</h1>
-
-
-
+            </div>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>

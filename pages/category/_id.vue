@@ -8,8 +8,11 @@
         <br>
     </div> -->
     <div class="min-h-screen bg-cover" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);" >
-        <div class="w-5/6 mx-auto bg-gray-800 px-24" style="cursor: pointer; box-shadow: 0 0 48px 0 rgba(0,10,20,0.4);">
-            <h1 class="text-gray-300 mt-20 pt-8 text-center mb-0" style="top:0;">Recomended Books</h1>
+        <br>
+        <br>
+        <br>
+        <div class="w-5/6 mx-auto bg-gray-800 px-24 rounded-xl" style="cursor: pointer; box-shadow: 0 0 48px 0 rgba(0,10,20,0.4);">
+            <h1 class="text-gray-300 mt-20 pt-8 text-center mb-0" style="top:0;">{{categoryName}}</h1>
             <div class="flex flex-wrap mx-auto py-12" style="justify-content: center; top:0;">
             
             <div @click="goToBook(book.ISBN)" class="h-80 w-60 mx-10 mb-16 bg-gray-600 bg-cover text-gray-200 font-medium rounded-lg" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
@@ -27,6 +30,9 @@
             </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
     </div>
 </template>
 
@@ -37,6 +43,7 @@ export default {
         let db = require('@/db_books.json');
         let allbooks = []
         let books = []
+        let categoryName = ""
         console.log(params.id)
         for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])allbooks.push(db["books"][i])
         for(let i = 0; i<allbooks.length; i++){
@@ -44,6 +51,7 @@ export default {
                 let identify = allbooks[i]["genre"][j]
                 for(let letter = 0; letter < allbooks[i]["genre"][j].length; letter++) if(identify[letter] == ' ') identify = identify.substring(0,letter) + '-' + identify.substring(letter+1)
                 if(identify == params.id){
+                    categoryName = allbooks[i]["genre"][j]
                     books.push(allbooks[i])
                     break;
                 }
@@ -51,7 +59,7 @@ export default {
             }
         }
         return {
-            books
+            books, categoryName
         }
 
     }, 

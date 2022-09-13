@@ -1,37 +1,31 @@
 <template>
-  <div class="pt-24 bg-gray-800">
+  <div class="min-h-screen bg-cover pt-24" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);" >
     
     <div style="width:80vw; margin: 0% 10% 0% 10%;">
       <div class="quick-about">
-        <div class="flex flex-wrap">
-          <div class="w-full md:w-1/2">
-          <!-- <br>
-          <br>
-          <br> -->
-            <!-- <img src="/pictures/Capture.png" width="80%" style="margin:17.5%"> -->
-            <!-- <img src="https://assets-global.website-files.com/5d6ebfe6117b67440d16086f/61261fe24a57aa3847af57ce_fibra%20Copia%20de%20Ima%CC%81genes%20TechBlog.png" width="65%" style="margin:17.5%">
-            <div id="orange-thing"></div> -->
-          </div>
-          <div class="w-full md:w-1/2">
-             <!-- <nuxt-content :document="about" style="margin:10%;" class="font-body"></nuxt-content> -->
-          </div>
-        </div>
-        <h1 class="text-gray-300">Recomended Books</h1>
-        <div class="flex flex-wrap bg-gray-700 py-12" style="justify-content: center; box-shadow: 0 0 48px 0 rgba(0,10,20,0.3);">
-          <div @click="goToBook(book.ISBN)" class="h-80 w-60 m-6 bg-gray-600 bg-cover text-gray-200 font-medium" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
-          backgroundImage: `url(${book.img})`,
-          textShadow: '0 0 6px rgba(0, 0, 30, 1)'
-          }">
-              <!-- <img :src="book.img" alt="" class="w-full h-60 bg-cover">   -->
-              <div class="w-full h-56"></div>
-              <div class="bg-gray-500 bg-opacity-100 h-24 p-4">
-                <!-- <p>{{book.ISBN}}</p> -->
-                <p>{{book.title}}</p>
-                <!-- <p>{{book.author}}</p> -->
-              </div>
-              
+        <br>
+        <br>
+        <div class="w-5/6 mx-auto bg-gray-800 px-24 rounded-xl" style="box-shadow: 0 0 48px 0 rgba(0,10,20,0.4);">
+          <h1 class="text-gray-300 mt-20 pt-8 text-center mb-0" style="top:0;">Recommended Books</h1>
+          <div class="flex flex-wrap mx-auto py-12" style="justify-content: center; top:0;">
+            <div @click="goToBook(book.ISBN)" class="h-80 w-60 m-6 bg-gray-600 bg-cover text-gray-200 font-medium rounded-lg" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
+            backgroundImage: `url(${book.img})`,
+            textShadow: '0 0 6px rgba(0, 0, 30, 1)'
+            }">
+                <!-- <img :src="book.img" alt="" class="w-full h-60 bg-cover">   -->
+                <div class="w-full h-56"></div>
+                <div class="bg-gray-500 bg-opacity-100 h-24 p-4 rounded-b-lg">
+                  <!-- <p>{{book.ISBN}}</p> -->
+                  <p>{{book.title}}</p>
+                  <!-- <p>{{book.author}}</p> -->
+                </div>
+                
+            </div>
           </div>
         </div>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
   </div>
@@ -40,7 +34,7 @@
 <script>
 export default {
   name: 'IndexPage',
-  async asyncData({$content}){
+  async asyncData({}){
       // let about = await $content('index/short-about').fetch()
       // let pages = await $content('postsmd').sortBy('nr', 'desc').without(['body']).fetch()
       // sortBy('id', 'desc').limit() 
