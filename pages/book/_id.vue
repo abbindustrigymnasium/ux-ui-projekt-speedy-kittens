@@ -3,15 +3,22 @@
         <nuxt-content :document="post"></nuxt-content>
         <br>
         <h5>Author: {{ post.author}}</h5>
-        <p>Created: {{ post.created}}</p> 
+        <p>Created: {{ post.created}}</p>
         <p>Updated: {{ post.updated}}</p>
-        <br>
+        <br>     class="flex justify-start" style="margin-left:5%;"
     </div> -->
-    <div>
-        {{book.title}}
-        <img :src="book.img" alt="">
-        {{book.author}}
+    <div class="bg-gray-800 min-h-screen">
+      <h1 class="z-10 text-5xl justify-start text-white pt-24 w-6/12 justify-center " style="margin-left:20%;"> {{book.title}} skriven av {{book.author}} </h1>
+      <div class="bg-gray-700 flex justify-start box-shadow w-7/12" style="margin-left:20%;">
+
+
+        <img :src="book.img" class="w-4/12">
+        <h1>det här är en bok</h1>
+
+
+
     </div>
+  </div>
 </template>
 
 <script>
@@ -29,6 +36,11 @@ export default {
 }
 
 </script>
+
+<style>
+
+
+</style>
 
 
 
