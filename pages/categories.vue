@@ -9,6 +9,7 @@
             }">
 
             <p class="text-center p-2 md:h-20 h-12 md:rounded-lg rounded-md">{{category[0]}}</p>
+            <img :src="category[3]" alt="">
         </div>
       </div>
     </div>
@@ -36,7 +37,7 @@ export default {
             let identify = books[i]["genre"][j]
             for(let letter = 0; letter < books[i]["genre"][j].length; letter++) if(identify[letter] == ' ') identify = identify.substring(0,letter) + '-' + identify.substring(letter+1)
             // console.log(identify)
-            categories.push([books[i]["genre"][j], 1, identify])
+            categories.push([books[i]["genre"][j], 1, identify, books[i]["img"]])
           }
         }
       }
