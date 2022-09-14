@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-cover mt-20 py-24" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);">
+  <div class="min-h-screen bg-cover py-24" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);">
     <div class="w-5/6 mx-auto bg-gray-800 py-12 md:px-24 px-8 rounded-xl">
       <h1 class="text-gray-300 text-center">Categories</h1>
       <div class="flex flex-wrap w-full" style="justify-content: center; margin-bottom:200px">
