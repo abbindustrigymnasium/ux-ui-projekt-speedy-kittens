@@ -1,11 +1,12 @@
 <template>
-  <div>
-    
-    <h1>Categories</h1>
-    <div class="flex flex-wrap" style="justify-content: center; margin-bottom:200px">
-      <div @click="goToCategory(category[2])" class="w-56 m-6" style="cursor: pointer; background-color: rgb(150, 150, 150);" v-for="category in categories" :key="category.id">
+  <div class="min-h-screen bg-cover mt-20 py-24" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);">
+    <div class="w-5/6 mx-auto bg-gray-800 py-12 px-24 rounded-xl">
+      <h1 class="text-gray-300 text-center">Categories</h1>
+      <div class="flex flex-wrap" style="justify-content: center; margin-bottom:200px">
+        <div @click="goToCategory(category[2])" class="w-56 m-6" style="cursor: pointer; background-color: rgb(150, 150, 150);" v-for="category in categories" :key="category.id">
 
-          <p>{{category[0]}}</p>
+            <p class="text-center h-24">{{category[0]}}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -51,3 +52,25 @@ export default {
   }
 }
 </script>
+
+<style>
+
+  * {
+    font-family:
+            'Source Sans Pro',
+            -apple-system,
+            BlinkMacSystemFont,
+            'Segoe UI',
+            Roboto,
+            'Helvetica Neue',
+            Arial,
+            sans-serif;
+        font-size: 16px;
+        word-spacing: 1px;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        box-sizing: border-box;
+  }
+</style>
