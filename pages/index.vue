@@ -6,7 +6,7 @@
         <!-- <br>
         <br> -->
         <div class="w-5/6 mx-auto bg-gray-800 px-24 rounded-xl" style="box-shadow: 0 0 48px 0 rgba(0,10,20,0.4);">
-          <h1 class="text-yellow-400 mt-20 pt-8 text-center mb-0 text-4xl" style="top:0;">Recommended Books</h1>
+          <h1 class="text-yellow-400 mt-20 pt-8 text-center mb-0 text-4xl" style="top:0; font-weight: 600;">Recommended Books</h1>
           <div class="flex flex-wrap mx-auto py-12" style="justify-content: center; top:0;">
             <div @click="goToBook(book.ISBN)" class="h-80 w-60 m-6 bg-gray-600 bg-cover text-gray-200 font-medium rounded-lg" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
             backgroundImage: `url(${book.img})`,
@@ -32,9 +32,14 @@
 </template>
 
 <script>
+
+  
+  // let stringChars = 20
+  // let trimmedString = trimFunction(stringChars, bookTitle);
 export default {
   name: 'IndexPage',
   async asyncData({}){
+      
       // let about = await $content('index/short-about').fetch()
       // let pages = await $content('postsmd').sortBy('nr', 'desc').without(['body']).fetch()
       // sortBy('id', 'desc').limit() 
@@ -64,12 +69,14 @@ export default {
       return {
           books
       }
+      
   }, 
   methods: {
     goToBook(id) {
       this.$router.push('/book/'+id)
     }
   }
+  
 }
 </script>
 
