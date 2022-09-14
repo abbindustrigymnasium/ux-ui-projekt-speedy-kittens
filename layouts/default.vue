@@ -1,6 +1,5 @@
 <template>
     <div class="z-50" style="top:0;" >
-<<<<<<< HEAD
         <!-- <div id="header" :class="$route.path=='/' " class="fixed bg-gray-700 w-full h-20 md:text-lg text-sm text-gray-400" style="box-shadow: 0 0 32px 0 rgba(0,10,20,0.6); top: 0;">
             <div class="w-full flexcontent py-4 mx-8 flex">
                 <div class="my-auto ">
@@ -20,7 +19,7 @@
                         </div>
                     </form>
                 </div>
-=======
+
         <div id="header" class="fixed bg-gray-700 w-full h-20 text-lg text-gray-400" style="box-shadow: 0 0 32px 0 rgba(0,10,20,0.6); top: 0;">
             <div class="flexcontent ml-8 py-4 ">
                 <form class="mr-4">
@@ -36,10 +35,6 @@
                 <nuxt-link to="/" class="linktext text-lg"> Home </nuxt-link>
                 <nuxt-link to="/categories" class="linktext text-lg"> Our Library </nuxt-link>
                 <nuxt-link to="/staff" class="linktext text-lg"> Meet the Staff</nuxt-link>
-
-
-
->>>>>>> 60a4cd7bb79187daf774d283dca300e9c48940f5
             </div>
         </div> -->
         <NavBar />
