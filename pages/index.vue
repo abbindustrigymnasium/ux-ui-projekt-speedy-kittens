@@ -39,13 +39,9 @@
 export default {
   name: 'IndexPage',
   async asyncData({}){
-<<<<<<< HEAD
-      
       // let about = await $content('index/short-about').fetch()
       // let pages = await $content('postsmd').sortBy('nr', 'desc').without(['body']).fetch()
       // sortBy('id', 'desc').limit() 
-=======
->>>>>>> 73dc49609beb3927b11b95a831c631cd66dfaaf6
       let db = require('../db_books.json');
       let books = []
       for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])books.push(db["books"][i])
