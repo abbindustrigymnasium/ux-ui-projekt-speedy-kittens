@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-cover pt-24" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);" >
-    
+
     <div>
       <div class="quick-about">
         <!-- <br>
@@ -14,12 +14,12 @@
             }">
                 <!-- <img :src="book.img" alt="" class="w-full h-60 bg-cover">   -->
                 <div class="w-full h-56"></div>
-                <div class="bg-gray-500 bg-opacity-100 h-24 p-4 rounded-b-lg">
+                <div class="bg-gray-700 bg-opacity-100 h-24 p-4 rounded-b-lg">
                   <!-- <p>{{book.ISBN}}</p> -->
                   <p>{{book.title}}</p>
                   <!-- <p>{{book.author}}</p> -->
                 </div>
-                
+
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
 
 <script>
 
-  
+
   // let stringChars = 20
   // let trimmedString = trimFunction(stringChars, bookTitle);
 export default {
@@ -41,21 +41,21 @@ export default {
   async asyncData({}){
       // let about = await $content('index/short-about').fetch()
       // let pages = await $content('postsmd').sortBy('nr', 'desc').without(['body']).fetch()
-      // sortBy('id', 'desc').limit() 
+      // sortBy('id', 'desc').limit()
       let db = require('../db_books.json');
       let books = []
       for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])books.push(db["books"][i])
       return {
           books
       }
-      
-  }, 
+
+  },
   methods: {
     goToBook(id) {
       this.$router.push('/book/'+id)
     }
   }
-  
+
 }
 </script>
 
@@ -87,9 +87,9 @@ export default {
     width:100%;
   }
   #orange-thing{
-    position: absolute; 
-    width:20%; 
-    height:70%; 
+    position: absolute;
+    width:20%;
+    height:70%;
     background-color: #f0b541;
     top: 67.5%;
     left: 12%;
