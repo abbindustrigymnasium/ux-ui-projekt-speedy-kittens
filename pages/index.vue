@@ -39,33 +39,16 @@
 export default {
   name: 'IndexPage',
   async asyncData({}){
+<<<<<<< HEAD
       
       // let about = await $content('index/short-about').fetch()
       // let pages = await $content('postsmd').sortBy('nr', 'desc').without(['body']).fetch()
       // sortBy('id', 'desc').limit() 
+=======
+>>>>>>> 73dc49609beb3927b11b95a831c631cd66dfaaf6
       let db = require('../db_books.json');
       let books = []
-      let categorys = []
       for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])books.push(db["books"][i])
-      console.log(books.length)
-      for(let i = 0; i<books.length; i++){
-        for(let j = 0; j<books[i]["genre"].length; j++){
-          let seen = false
-          for(let gen = 0; gen<categorys.length; gen++){
-            if(books[i]["genre"][j] == categorys[gen][0]){
-              categorys[gen][1]++
-              seen = true
-              break;
-            }
-          }
-          if(!seen) categorys.push([books[i]["genre"][j], 1])
-        }
-      }
-      console.log("**************")
-      console.log(categorys.length)
-      for(let i = 0; i<categorys.length; i++){
-        console.log(categorys[i][0], categorys[i][1])
-      }
       return {
           books
       }
