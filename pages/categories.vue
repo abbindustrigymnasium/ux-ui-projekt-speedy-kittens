@@ -3,13 +3,13 @@
     <div class="w-5/6 mx-auto bg-gray-800 py-12 md:px-24 px-8 rounded-xl">
       <h1 class="text-gray-300 text-center">Categories</h1>
       <div class="flex flex-wrap w-full" style="justify-content: center; margin-bottom:200px">
-        <div @click="goToCategory(category[2])" class="md:w-56 w-full md:m-6 my-4 mx-5 bg-gray-700 text-center" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="category in categories" :key="category.id" :style="{
+        <div @click="goToCategory(category[2])" class="md:w-56 w-full md:m-6 my-4 mx-5 bg-gray-700 text-center rounded-lg h-64" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="category in categories" :key="category.id" :style="{
             // backgroundImage: `url(${category.id})`,
             // textShadow: '0 0 6px rgba(0, 0, 30, 1)'
             }">
 
-            <p class="text-center p-2 md:h-20 h-12 md:rounded-lg rounded-md">{{category[0]}}</p>
-            <img :src="category[3]" alt="">
+            <p class="text-center p-2 md:h-12 md:rounded-lg rounded-md text-white">{{category[0]}}</p>
+            <img :src="category[3]" class="w-64 h-56 flex object-cover rounded-b-md">
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@ export default {
           categories,
           books
       }
-  }, 
+  },
   methods: {
     goToCategory(id) {
       this.$router.push('/category/'+id)

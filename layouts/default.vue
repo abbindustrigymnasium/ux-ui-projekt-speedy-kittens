@@ -1,8 +1,8 @@
 <template>
     <div class="z-50" style="top:0;" >
-        <div id="header" :class="$route.path=='/' " class="fixed bg-gray-700 w-full h-20 text-lg text-gray-400" style="box-shadow: 0 0 32px 0 rgba(0,10,20,0.6); top: 0;">
+        <div id="header" class="fixed bg-gray-700 w-full h-20 text-lg text-gray-400" style="box-shadow: 0 0 32px 0 rgba(0,10,20,0.6); top: 0;">
             <div class="flexcontent ml-8 py-4 ">
-                <form class="mr-4">   
+                <form class="mr-4">
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
                     <div class="relative">
                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -16,7 +16,7 @@
                 <nuxt-link to="/categories" class="linktext text-lg"> Our Library </nuxt-link>
                 <nuxt-link to="/staff" class="linktext text-lg"> Meet the Staff</nuxt-link>
 
-                
+
 
             </div>
         </div>
