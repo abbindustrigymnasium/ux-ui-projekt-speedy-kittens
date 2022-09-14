@@ -10,14 +10,23 @@
       "avatar": "https://www.stylectory.net/wp-content/uploads/2021/01/image-3.jpeg"
     },
     {
-      "id": 6,
-      "name": "Tyr Troengson",
-      "email": "tyr_troengson@hotmail.com",
-      "phone": "(880) 785-3345",
-      "role": "fixer",
-      "dateOfBirth": "1990-10-24T01:11:26.670Z",
-      "avatar": "https://i.redd.it/6hnm464c7n461.jpg"
-    },
+        "id": 1,
+        "name": "Kate Bode",
+        "email": "Dusty_Rodriguez@hotmail.com",
+        "phone": "(683) 364-6626",
+        "role": "manager",
+        "dateOfBirth": "1989-05-13T14:12:58.208Z",
+        "avatar": "http://static1.squarespace.com/static/5f1619b19c2d654398f87d45/t/5f162547a5a266062b3d5e59/1595286896476/16.JPG?format=1500w"
+      },
+    {
+        "id": 3,
+        "name": "Joakim Flink",
+        "email": "joakim.flink@hotmail.com",
+        "phone": "952-531-7444",
+        "role": "author",
+        "dateOfBirth": "1656-11-06T11:03:53.873Z",
+        "avatar": "http://i.imgur.com/CWSPfut.png"
+      },
     {
       "id": 3,
       "name": "Tore  Alterman",
@@ -37,15 +46,6 @@
         "avatar": "https://mediaproxy.salon.com/width/1200/https://media.salon.com/2013/12/nexus-me2-1024x682-e1386172224249.jpg"
       },
       {
-        "id": 1,
-        "name": "Kate Bode",
-        "email": "Dusty_Rodriguez@hotmail.com",
-        "phone": "(683) 364-6626",
-        "role": "manager",
-        "dateOfBirth": "1989-05-13T14:12:58.208Z",
-        "avatar": "http://static1.squarespace.com/static/5f1619b19c2d654398f87d45/t/5f162547a5a266062b3d5e59/1595286896476/16.JPG?format=1500w"
-      },
-      {
         "id": 2,
         "name": "Jeton Mustini",
         "email": "jeton.mustini@hotmail.com",
@@ -55,15 +55,6 @@
         "avatar": "https://www.mustini.se/images/jeton.jpg"
       },
       {
-        "id": 3,
-        "name": "Joakim Flink",
-        "email": "joakim.flink@hotmail.com",
-        "phone": "952-531-7444",
-        "role": "author",
-        "dateOfBirth": "1656-11-06T11:03:53.873Z",
-        "avatar": "http://i.imgur.com/CWSPfut.png"
-      },
-      {
         "id": 4,
         "name": "Carlos Corwin",
         "email": "Fletcher.Cartwright41@hotmail.com",
@@ -71,6 +62,15 @@
         "role": "librarian",
         "dateOfBirth": "1999-03-16T18:26:12.841Z",
         "avatar": "https://www.corwinfordreno.com/static/dealer-19611/Corwin_Employees/DSC06914.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Tyr Troengson",
+        "email": "tyr_troengson@hotmail.com",
+        "phone": "(880) 785-3345",
+        "role": "fixer",
+        "dateOfBirth": "1990-10-24T01:11:26.670Z",
+        "avatar": "https://i.redd.it/6hnm464c7n461.jpg"
       }
   ]
 }
