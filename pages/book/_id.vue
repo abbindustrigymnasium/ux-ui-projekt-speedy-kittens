@@ -6,7 +6,7 @@
         <div class="p-4 md:8/12 w-1/2 p-4">
           <!-- <h1 class="flex text-white md:text-2xl text-md">{{book.title}}</h1> -->
           <h3 class="text-white md:text-xl text-sm">Author:&ensp; &emsp;    {{book.author}}</h3>
-          <h3 class="text-white md:text-xl text-sm">Genre: &ensp; &emsp;    {{book.genre}}</h3>
+          <h3 class="text-white md:text-xl text-sm">Genre: &ensp; &emsp;    {{book.genre.toString()}}</h3>
           <h3 class="text-white md:text-xl text-sm">Language:&ensp;   {{book.lang}}</h3>
           <h3 class="text-white md:text-xl text-sm">Copies left: {{book.copies}}</h3>
           <button style="background: rgb(255,0,0);
