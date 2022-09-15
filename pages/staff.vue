@@ -9,6 +9,7 @@
               <img :src="person.avatar" alt="" class="w-20 h-20 object-cover mb-2" style="border-radius: 50%;">
 
               <p>{{person.name}}</p>
+              <p>Age: {{2022-parseInt(person["dateOfBirth"].substring(0, 4))}}</p>
               <p>Role: {{person.role}}</p>
               <br>
               <p>Contact information</p>
