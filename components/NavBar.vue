@@ -159,6 +159,7 @@ export default {
     goToSearch() {
       // alert('/search/'+this.searchText);
       this.$router.push('/search/'+this.searchText)
+      this.searchText = ""
     }
   },
   watch: {
