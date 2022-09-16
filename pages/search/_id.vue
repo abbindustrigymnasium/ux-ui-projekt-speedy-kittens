@@ -40,7 +40,8 @@ export default {
         console.log(params.id)
         for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])allbooks.push(db["books"][i])
         for(let i = 0; i<allbooks.length; i++){
-            if(kmpSearch(params.id.toLowerCase(), allbooks[i]["title"].toLowerCase()) || kmpSearch(params.id.toLowerCase(), allbooks[i]["author"].toLowerCase())){
+            if(params.id == null) books.push(allbooks[i])
+            else if(kmpSearch(params.id.toLowerCase(), allbooks[i]["title"].toLowerCase()) || kmpSearch(params.id.toLowerCase(), allbooks[i]["author"].toLowerCase())){
                 books.push(allbooks[i])
             }
         }
