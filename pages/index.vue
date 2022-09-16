@@ -57,7 +57,7 @@ export default {
 
       for(let i = 0; i<allbooks.length; i++){
         for(let j = 0; j<allbooks[i]["genre"].length; j++){
-          if(allbooks[i]["genre"][j] == "Akademisk" || allbooks[i]["genre"][j] == "Unga vuxna" || allbooks[i]["genre"][j] == "Ungdomsböcker"){
+          if(allbooks[i]["genre"][j] == "Gamers" || allbooks[i]["genre"][j] == "Unga vuxna" || allbooks[i]["genre"][j] == "Ungdomsböcker"){
             books.push(allbooks[i])
             break;
           }
