@@ -9,7 +9,7 @@
                     <svg aria-hidden="true" class="w-5 h-5 text-yellow-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                 </div>
                 <input v-model="searchText" type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-yellow-400 bg-transparent rounded-lg md:border md:border-transparent focus:ring-yellow-500 focus:border-yellow-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-500 dark:focus:border-yellow-500" placeholder="search...">
-                <button @click="goToSearch" type="submit" class="hidden md:flex text-white absolute right-2.5 bottom-2.5 bg-gray-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-yellow-800 dark:focus:ring-blue-800" id="navSearchButton">Search</button>
+                <button @click="goToSearch" type="submit" class="hidden md:flex text-white absolute right-2.5 bottom-2.5 bg-gray-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-yellow-800 dark:focus:ring-yellow-800" id="navSearchButton">Search</button>
                 <hr
                     class="w-full m-0"
                     style="border: none; height: 2px; background: rgb(255, 136, 80); background: linear-gradient(90deg, rgba(255, 136, 80, 0) 0%, rgba(255, 136, 80, 0.7) 25%, rgba(255, 136, 80, 1) 50%, rgba(255, 136, 80, 0.7) 75%, rgba(255, 136, 80, 0) 100%);"
