@@ -3,7 +3,7 @@
     <div>
       <div class="quick-about">
         <div class="w-5/6 mx-auto bg-gray-800 mt-10 py-12 md:px-16 px-8 rounded-xl" style="box-shadow: 0 0 48px 0 rgba(0,10,20,0.4);">
-          <h1 class="text-gray-300 text-center flex justify-center" style="top:0; font-weight: 600; ">Recommended Books</h1>
+          <p class="text-gray-300 text-center flex justify-center md:text-3xl text-xl pb-8" style="top:0; font-weight: 600; ">Recommended Books</p>
           <hr
               class="w-full mb-4"
               style="border: none; height: 2px; background: rgb(255, 136, 80); background: linear-gradient(90deg, rgba(255, 136, 80, 0) 0%, rgba(255, 136, 80, 0.7) 25%, rgba(255, 136, 80, 1) 50%, rgba(255, 136, 80, 0.7) 75%, rgba(255, 136, 80, 0) 100%);"
