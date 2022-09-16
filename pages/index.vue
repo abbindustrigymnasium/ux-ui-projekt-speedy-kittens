@@ -50,9 +50,21 @@ export default {
       // let about = await $content('index/short-about').fetch()
       // let pages = await $content('postsmd').sortBy('nr', 'desc').without(['body']).fetch()
       // sortBy('id', 'desc').limit()
-      let db = require('../db_books.json');
+      let db = require('@/db_books.json');
+      let allbooks = []
       let books = []
-      for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])books.push(db["books"][i])
+      for(let i = 0; i<db["books"].length; i++) if(db["books"][i]["img"])allbooks.push(db["books"][i])
+
+      for(let i = 0; i<allbooks.length; i++){
+        for(let j = 0; j<allbooks[i]["genre"].length; j++){
+          if(allbooks[i]["genre"][j] == "Akademisk" || allbooks[i]["genre"][j] == "Unga vuxna" || allbooks[i]["genre"][j] == "Ungdomsböcker"){
+            books.push(allbooks[i])
+            break;
+          }
+          
+        }
+      }
+
       return {
           books
       }
