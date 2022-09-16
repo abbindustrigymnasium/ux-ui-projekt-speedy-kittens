@@ -13,7 +13,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Theodor-Blogg',
+    title: 'Library - Speedy Kittens',
     htmlAttrs: {
       lang: 'en'
     },

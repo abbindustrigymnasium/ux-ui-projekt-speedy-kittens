@@ -1,17 +1,25 @@
 <template>
   <div class="min-h-screen bg-cover py-24" style="background-image: url(https://static.vecteezy.com/system/resources/previews/003/421/363/original/abstract-modern-gradient-dark-blue-dynamic-stripes-background-free-vector.jpg);">
-    <div class="w-5/6 mx-auto bg-gray-800 py-12 md:px-24 px-8 rounded-xl">
-      <h1 class="text-gray-300 text-center">Categories</h1>
-      <div class="flex flex-wrap w-full" style="justify-content: center; margin-bottom:200px">
-        <div @click="goToCategory(category[2])" class="md:w-56 w-full md:m-6 my-4 mx-5 bg-gray-700 text-center rounded-lg h-64" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="category in categories" :key="category.id" :style="{
+    <div class="w-5/6 mx-auto bg-gray-800 mt-10 py-12 md:px-16 px-8 rounded-xl" style="box-shadow: 0 0 48px 0 rgba(0,10,20,0.4);">
+      <h1 class="text-gray-300 text-center flex justify-center" style="top:0; font-weight: 600;">Categories</h1>
+      <hr
+              class="w-full mb-4"
+              style="border: none; height: 2px; background: rgb(255, 136, 80); background: linear-gradient(90deg, rgba(255, 136, 80, 0) 0%, rgba(255, 136, 80, 0.7) 25%, rgba(255, 136, 80, 1) 50%, rgba(255, 136, 80, 0.7) 75%, rgba(255, 136, 80, 0) 100%);"
+            />
+      <div class="flex flex-wrap w-full" style="justify-content: center;">
+        <div @click="goToCategory(category[2])" class="md:w-60 w-full md:my-6 md:mx-8 my-4 mx-5 bg-gray-700 text-center rounded-lg h-64" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="category in categories" :key="category.id" :style="{
             // backgroundImage: `url(${category.id})`,
             // textShadow: '0 0 6px rgba(0, 0, 30, 1)'
             }">
 
-            <p class="text-center p-2 md:h-12 md:rounded-lg rounded-md text-white">{{category[0]}}</p>
+            <p class="text-center p-2 md:h-12 md:rounded-lg rounded-md text-white font-medium">{{category[0]}}</p>
             <img :src="category[3]" class="w-64 h-56 flex object-cover rounded-b-md">
         </div>
       </div>
+      <hr
+              class="w-full mt-8"
+              style="border: none; height: 2px; background: rgb(255, 136, 80); background: linear-gradient(90deg, rgba(255, 136, 80, 0) 0%, rgba(255, 136, 80, 0.7) 25%, rgba(255, 136, 80, 1) 50%, rgba(255, 136, 80, 0.7) 75%, rgba(255, 136, 80, 0) 100%);"
+            />
     </div>
   </div>
 </template>
