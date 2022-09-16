@@ -7,7 +7,7 @@
               style="border: none; height: 2px; background: rgb(255, 136, 80); background: linear-gradient(90deg, rgba(255, 136, 80, 0) 0%, rgba(255, 136, 80, 0.7) 25%, rgba(255, 136, 80, 1) 50%, rgba(255, 136, 80, 0.7) 75%, rgba(255, 136, 80, 0) 100%);"
             />
       <div class="flex flex-wrap w-full" style="justify-content: center;">
-        <div @click="goToCategory(category[2])" class="md:w-60 w-full md:my-6 md:mx-8 my-4 mx-5 bg-gray-700 text-center rounded-lg h-64" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="category in categories" :key="category.id" :style="{
+        <div id="categoriesDiv" @click="goToCategory(category[2])" class="md:w-60 w-full md:my-6 md:mx-8 my-4 mx-5 bg-gray-700 text-center rounded-lg h-64" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="category in categories" :key="category.id" :style="{
             // backgroundImage: `url(${category.id})`,
             // textShadow: '0 0 6px rgba(0, 0, 30, 1)'
             }">
@@ -89,5 +89,10 @@ export default {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         box-sizing: border-box;
+  }
+
+  #categoriesDiv:hover {
+    transform: scale(0.95);
+    transition: 200ms;
   }
 </style>

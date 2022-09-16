@@ -15,7 +15,7 @@
             <h1 class="text-gray-300 mt-20 pt-8 text-center mb-0" style="top:0;">{{categoryName}}</h1>
             <div class="flex flex-wrap mx-auto py-12" style="justify-content: center; top:0;">
             
-            <div @click="goToBook(book.ISBN)" class="h-80 w-60 mx-10 mb-16 bg-gray-600 bg-cover text-gray-200 font-medium rounded-lg" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
+            <div id="booksDiv" @click="goToBook(book.ISBN)" class="h-80 w-60 mx-10 mb-16 bg-gray-600 bg-cover text-gray-200 font-medium rounded-lg" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
             backgroundImage: `url(${book.img})`,
             textShadow: '0 0 6px rgba(0, 0, 30, 1)'
             }">
@@ -71,6 +71,14 @@ export default {
 }
 
 </script>
+
+<style>
+
+    #booksDiv:hover {
+    transform: scale(0.95);
+    transition: 200ms;
+  }
+</style>
 
 
 

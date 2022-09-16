@@ -9,7 +9,7 @@
               style="border: none; height: 2px; background: rgb(255, 136, 80); background: linear-gradient(90deg, rgba(255, 136, 80, 0) 0%, rgba(255, 136, 80, 0.7) 25%, rgba(255, 136, 80, 1) 50%, rgba(255, 136, 80, 0.7) 75%, rgba(255, 136, 80, 0) 100%);"
             />
           <div class="flex flex-wrap w-full" style="justify-content: center; top:0;">
-            <div @click="goToBook(book.ISBN)" class="h-80 md:w-60 w-full md:my-6 md:mx-8 my-4 mx-5 bg-gray-600 bg-cover text-gray-200 rounded-lg" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
+            <div id="booksDiv" @click="goToBook(book.ISBN)" class="h-80 md:w-60 w-full md:my-6 md:mx-8 my-4 mx-5 bg-gray-600 bg-cover text-gray-200 rounded-lg" style="cursor: pointer; box-shadow: 0 12px 24px 0 rgba(0,10,20,0.3);" v-for="book in books" :key="book.id" :style="{
             backgroundImage: `url(${book.img})`,
             textShadow: '0 0 6px rgba(0, 0, 30, 1)'
             }">
@@ -117,6 +117,11 @@ export default {
   }
   .bloglist{
     width: 30%;
+  }
+
+  #booksDiv:hover {
+    transform: scale(0.95);
+    transition: 200ms;
   }
 </style>
 
